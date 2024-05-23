@@ -1,14 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISIP</title>
     <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="icon" href="favicon.ico">
 </head>
+
 <body>
     <div class="page">
-        
+        <header class="header">
+            <div class="container header__container">
+                <a class="header__logo" href="/"><img src="assets/img/logo.svg" alt="Лого"></a>
+                <nav class="header__nav">
+                    <ul>
+                        <li><a class="nav-link" href="/#news__section">Новости</a></li>
+                        <li><a class="nav-link" href="/schedule.html">Расписание</a></li>
+                        <li><a class="nav-link" href="/#students__section">Абитуриентам</a></li>
+                        <li><a class="nav-link" href="/#teachers__section">Преподаватели</a></li>
+                        <li><a class="nav-link" href="/login.html">Вход</a> / <a class="nav-link" href="/registration.html">Регистрация</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="title__section">
+                <div class="container title__container">
+                    <h1>Информационные системы<br> и программирование</h1>
+                    <div class="title__slider">
+                        <button class="btn-arrow left">
+                            <svg viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.3452 18.6785C9.6943 19.3294 8.63903 19.3294 7.98816 18.6785L0.488155 11.1785C-0.162718 10.5276 -0.162718 9.47236 0.488155 8.82149L7.98816 1.32149C8.63903 0.670617 9.6943 0.670617 10.3452 1.32149C10.9961 1.97237 10.9961 3.02764 10.3452 3.67851L5.69036 8.33334L28.3333 8.33334C29.2538 8.33334 30 9.07953 30 10C30 10.9205 29.2538 11.6667 28.3333 11.6667L5.69036 11.6667L10.3452 16.3215C10.9961 16.9724 10.9961 18.0276 10.3452 18.6785Z"
+                                    fill="#F5F5F5" />
+                            </svg>
+                        </button>
+                        <button class="btn-arrow right">
+                            <svg viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.3452 18.6785C9.6943 19.3294 8.63903 19.3294 7.98816 18.6785L0.488155 11.1785C-0.162718 10.5276 -0.162718 9.47236 0.488155 8.82149L7.98816 1.32149C8.63903 0.670617 9.6943 0.670617 10.3452 1.32149C10.9961 1.97237 10.9961 3.02764 10.3452 3.67851L5.69036 8.33334L28.3333 8.33334C29.2538 8.33334 30 9.07953 30 10C30 10.9205 29.2538 11.6667 28.3333 11.6667L5.69036 11.6667L10.3452 16.3215C10.9961 16.9724 10.9961 18.0276 10.3452 18.6785Z"
+                                    fill="#F5F5F5" />
+                            </svg>
+                        </button>
+                        <img src="assets/img/news-2.jpg" alt="Фото">
+                    </div>
+                </div>
+            </section>
+
+            <section id="news__section" class="news__section">
+                <div class="container news__container">
+                    <h2>Новости</h2>
+                    <div class="news__blocks">
+                        <div class="news__block">
+                            <img src="assets/img/news-1.jpg" alt="Фото новости">
+                            <div class="news__inf">
+                                <p>Студент 3 курса спецальности 09.02.07 “Инфомационные системы и программирование” Коряков Максим Александрович принял участие в Региональном этапе Всероссийского чемпионата “Профессионалы” в компетенции “Веб-технологии”.</p>
+                                <p class="news__date">29 марта 2024 г.</p>
+                                <button class="btn-main">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="news__block">
+                            <img src="assets/img/news-2.jpg" alt="Фото новости">
+                            <div class="news__inf">
+                                <p>Состоялась защита портфолио студентов специальности 09.02.07 “Информационные системы и программирование”.</p>
+                                <p class="news__date">17 февраля 2024 г.</p>
+                                <button class="btn-main">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="news__block">
+                            <img src="assets/img/news-3.jpg" alt="Фото новости">
+                            <div class="news__inf">
+                                <p>Завершился декадник специальности 09.02.07 “Информационные системы и программирование”.</p>
+                                <p class="news__date">14 февраля 2024 г.</p>
+                                <button class="btn-main">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="teachers__section" class="teachers__section">
+                <div class="container teachers__container">
+                    <h2>Преподаватели</h2>
+                    <div class="teachers__blocks">
+                        <div class="teachers__block">
+                            <div class="teachers__inf">
+                                <h5>Нугаманова Розалия Ахмудулловна</h5>
+                                <h6>Дисциплины:</h6>
+                                <ul class="teachers__subjects">
+                                    <li>Компьютерные сети</li>
+                                    <li>Информатика</li>
+                                    <li>Информационные технологии в профессиональной деятельности</li>
+                                    <li>Информатика и информационные технологии в профессиональной деятельности</li>
+                                    <li>Информационно-коммуникационные технологии в профессиональной деятельности</li>
+                                    <li>МДК.02.01 Проектирование и разработка интерфейсов пользователя</li>
+                                    <li>Операционные системы и среды</li>
+                                </ul>
+                            </div>
+                            <div class="teachers__img">
+                                <img src="" alt="Фото (3 x 4)">
+                            </div>
+                        </div>
+                        <div class="teachers__block">
+                            <div class="teachers__inf">
+                                <h5>Васильева Татьяна Алексеевна</h5>
+                                <h6>Дисциплины:</h6>
+                                <ul class="teachers__subjects">
+                                    <li>МДК.04.01.04 Разработка дополненной и виртуальной реальности</li>
+                                    <li>МДК.04.01.02 Технология разработки программного обеспечения</li>
+                                    <li>МДК.04.01.03 Инструментальные средства разработки программного обеспечения</li>
+                                    <li>МДК.04.06 Проектирование и использование электронных образовательных ресурсов</li>
+                                    <li>МДК 01.09 Метод обучения первым ИКТ-навыкам</li>
+                                    <li>Архитектура аппаратных средств</li>
+                                    <li>МДК 01.01 Проектирование и дизайн информационных систем</li>
+                                    <li>МДК.02.02 Графический дизайн и мультимедиа</li>
+                                    <li>МДК.05.01 Проектирование и дизайн информационных систем</li>
+                                </ul>
+                            </div>
+                            <div class="teachers__img">
+                                <img src="" alt="Фото (3 x 4)">
+                            </div>
+                        </div>
+                        <div class="teachers__block">
+                            <div class="teachers__inf">
+                                <h5>Галяув Линар Венерович</h5>
+                                <h6>Дисциплины:</h6>
+                                <ul class="teachers__subjects">
+                                    <li>Основы алгоритмизации и программирования</li>
+                                    <li>МДК.01.02 Разработка кода информационных систем</li>
+                                    <li>МДК.01.03 Тестирование информационных систем</li>
+                                    <li>МДК.03.01 Проектирование и разработка веб-приложений</li>
+                                </ul>
+                            </div>
+                            <div class="teachers__img">
+                                <img src="" alt="Фото (3 x 4)">
+                            </div>
+                        </div>
+                        <div class="teachers__block">
+                            <div class="teachers__inf">
+                                <h5>Атнашев Серегей Михайлович</h5>
+                                <h6>Дисциплины:</h6>
+                                <ul class="teachers__subjects">
+                                    <li>Основы проектирования баз данны</li>
+                                    <li>МДК.03.01 Проектирование и разработка веб-приложений</li>
+                                    <li>МДК.03.02 Оптимизация веб-приложений</li>
+                                    <li>МДК.03.03 Обеспечение безопасности веб-приложений</li>
+                                    <li>МДК.05.01 Инфокоммуникационные системы и сети</li>
+                                    <li>МДК.05.02 Технология разработки и защиты баз данных</li>
+                                    <li>МДК.06.01 Системное программирование</li>
+                                    <li>МДК.06.02 Прикладное программирование</li>
+                                    <li>МДК.04.01.01 Организация технологического процесса по программированию в компьютерных системах</li>
+                                    <li>МДК.04.01.02 Технология разработки программного обеспечения</li>
+                                    <li>МДК.04.01.03 Инструментальные средства разработки программного обеспечения</li>
+                                </ul>
+                            </div>
+                            <div class="teachers__img">
+                                <img src="" alt="Фото (3 x 4)">
+                            </div>
+                        </div>
+                        <div class="teachers__block">
+                            <div class="teachers__inf">
+                                <h5>Лобанова Наталья Николаевна</h5>
+                                <h6>Дисциплины:</h6>
+                                <ul class="teachers__subjects">
+                                    <li>Математика</li>
+                                    <li>Элементы высшей математики</li>
+                                    <li>Численные методы</li>
+                                    <li>Дискретная математика с элементами математической логики</li>
+                                    <li>Теория вероятностей и математическая статистика</li>
+                                    <li>Информатика</li>
+                                </ul>
+                            </div>
+                            <div class="teachers__img">
+                                <img src="" alt="Фото (3 x 4)">
+                            </div>
+                        </div>
+                        <div class="teachers__block">
+                            <div class="teachers__inf">
+                                <h5>Зырянова Ольга Владимировна</h5>
+                                <h6>Дисциплины:</h6>
+                                <ul class="teachers__subjects">
+                                    <li>Экономика отрасли</li>
+                                    <li>Менеджмент в профессиональной деятельности</li>
+                                    <li>Основы экономики</li>
+                                    <li>Менеджмент</li>
+                                    <li>Основы предпринимательской деятельности</li>
+                                    <li>Менеджмент и управление персоналом в гостиничном деле</li>
+                                    <li>Основы маркетинга гостиничных услуг</li>
+                                    <li>Предпринимательская деятельность в сфере гостиничного бизнеса</li>
+                                    <li>Экономическая теория</li>
+                                    <li>Экономика организации</li>
+                                    <li>МДК.02.01 Менеджмент библиотечного дела</li>
+                                    <li>МДК.02.02 Управление библиотекой</li>
+                                    <li>Управление персоналом</li>
+                                    <li>Основы финансовой грамотности</li>
+                                </ul>
+                            </div>
+                            <div class="teachers__img">
+                                <img src="" alt="Фото (3 x 4)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="students__section" class="students__section">
+                <div class="container students__container">
+                    <h2>Абитуриентам</h2>
+                    <div class="students__blocks">
+                        <div class="students__block">
+                            <h5>Код</h5>
+                            <p>09.02.07</p>
+                        </div>
+                        <div class="students__block">
+                            <h5>Условия поступления, форма и срок обучения</h5>
+                            <p>Бюджет, очная, 3 г. и 10 мес.</p>
+                            <p>Внебюджет, очная, 3 г. и 10 мес.</p>
+                        </div>
+                        <div class="students__block">
+                            <h5>Минимальный уровень подготовки</h5>
+                            <p>Бюджет - на базе основного общего образования*</p>
+                            <p>Внебюджет - на базе основного общего образования*</p>
+                            <p>* После 9 класса</p>
+                        </div>
+                        <div class="students__block">
+                            <h5>Квалификация</h5>
+                            <p>Разработчик веб и мультимедийных приложений</p>
+                        </div>
+                        <div class="students__block">
+                            <h5>Области профессиональной деятельности</h5>
+                            <p>UX/UI дизайн, Frontend, Backend</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer__container">
+                <nav class="footer__nav">
+                    <a href=""><img src="assets/img/logo.svg" alt="Лого"></a>
+                    <ul>
+                        <li><a class="nav-link" href="/#news__section">Новости</a></li>
+                        <li><a class="nav-link" href="/schedule.html">Расписание</a></li>
+                        <li><a class="nav-link" href="/#students__section">Абитуриентам</a></li>
+                        <li><a class="nav-link" href="/#teachers__section">Преподаватели</a></li>
+                        <li><a class="nav-link" href="/login.html">Вход</a> / <a class="nav-link" href="/registration.html">Регистрация</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__bottom">
+                    <div class="footer__copyright">
+                        <img src="assets/img/icons/copyright.svg" alt="©">
+                        <p>М. А. Коряков, 2024</p>
+                    </div>
+                    <div class="footer__social">
+                        <a href="/"><img src="assets/img/icons/tg.svg" alt="tg"></a>
+                        <a href="/"><img src="assets/img/icons/youtube.svg" alt="youtube"></a>
+                        <a href="/"><img src="assets/img/icons/ok.svg" alt="ok"></a>
+                        <a href="/"><img src="assets/img/icons/vk.svg" alt="vk"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
+
 </html>
