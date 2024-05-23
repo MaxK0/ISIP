@@ -132,6 +132,40 @@ section {
 /* <================ End of base ================> */
 
 /* <================ Form ================> */
+form {
+  display: flex;
+  flex-direction: column;
+  width: var(--form-width);
+  gap: 5rem;
+}
+
+.form__block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-size: var(--font-size-small);
+  color: var(--color-1);
+  margin-left: 1rem;
+}
+
+input {
+  color: var(--color-1);
+  background: none;
+  border: 0.1rem solid var(--color-1);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-normal);
+  padding: 0.8rem 1.5rem;
+  width: 100%;
+}
+
+form > .btn-main {
+  margin-top: 2rem;
+  align-self: center;
+}
 
 /* <================ Buttons ================> */
 button {
@@ -547,3 +581,15 @@ button {
   text-align: end;
 }
 /* <================ End of schedule page ================> */
+
+
+
+/* <================ Login and register ================> */
+.form__section form {
+  align-self: center;
+}
+
+.register__form {
+  gap: 2rem;
+}
+/* <================ End of login and register ================> */
