@@ -139,6 +139,7 @@ button {
   background: none;
   border: none;
   transition: var(--transition);
+  font-size: var(--font-size-normal);
 }
 
 .btn-main {
@@ -430,11 +431,16 @@ button {
 
 .footer__copyright {
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
 .footer__copyright > img {
   width: 2.5rem;
+}
+
+.footer__copyright > p {
+  font-size: var(--font-size-extrasmall);
 }
 
 .footer__social {
@@ -443,3 +449,101 @@ button {
   align-items: center;
 }
 /* <================ End of footer ================> */
+
+
+
+/* <================ Schedule page ================> */
+.btn-schedule {
+  padding: 1.3rem 1rem;
+  color: var(--color-1);
+  background-color: var(--color-btn);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.btn-schedule.active {
+  background-color: var(--color-3);
+  cursor: default;
+}
+
+.btn-schedule:not(.active):hover {
+  background-color: var(--color-hover);
+}
+
+.btn-schedule:not(.active):active {
+  background-color: var(--color-active);
+}
+
+
+.schedule__groups {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  overflow-x: scroll;
+  scrollbar-color: var(--color-2) var(--color-1);
+  scrollbar-width: thin;
+}
+
+.schedule {
+  background-color: var(--color-1);
+  padding: 2.5rem 1.5rem;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 5rem;
+}
+
+.schedule__block {
+  width: 32%;
+  background-color: var(--color-2);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  height: fit-content;
+}
+
+.schedule__block > h5 {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.schedule__lesson {
+  word-break: break-all;
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;  
+  position: relative;
+}
+
+.schedule__lesson:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.2rem;
+  background-color: var(--color-1);
+  bottom: -1rem;
+}
+
+.schedule__lesson > h6 {
+  width: max-content;
+}
+
+.schedule__lesson__blocks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  width: 100%;
+}
+
+.schedule__lesson__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule__lesson__block.last {
+  align-self: flex-end;  
+  text-align: end;
+}
+/* <================ End of schedule page ================> */
