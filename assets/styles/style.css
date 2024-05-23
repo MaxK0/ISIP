@@ -16,12 +16,13 @@
 
   --container-width-lg: 72%;
   --container-width-md: 85%;
-  --container-width-sm: 95%;
+  --container-width-sm: 90%;
+  --container-width-phone: 95%;
   --container-width: var(--container-width-lg);
 
   --form-width-lg: 30%;
-  --form-width-md: 60%;
-  --form-width-sm: 90%;
+  --form-width-md: 40%;
+  --form-width-sm: 70%;
   --form-width: var(--form-width-lg);
 
   --border-radius: 1.5rem;
@@ -241,6 +242,10 @@ button {
   justify-content: space-between;
 }
 
+.header__menu {
+  display: none;
+}
+
 .header__logo {
   width: 4rem;
 }
@@ -315,6 +320,23 @@ button {
 /* <================ End of title section ================> */
 
 /* <================ News section ================> */
+.news__section h2, .teachers__title h2 {
+  margin-bottom: 0;
+}
+
+.news__title, .teachers__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7rem;
+}
+
+.news__all, .teachers__all {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
 .news__blocks {
   display: flex;
   justify-content: space-between;
@@ -361,8 +383,8 @@ button {
 
 .teachers__block {
   width: 48%;
-  height: 22vw;
   display: flex;
+  height: 45rem;
 }
 
 .teachers__inf {
@@ -603,3 +625,226 @@ button {
   gap: 2rem;
 }
 /* <================ End of login and register ================> */
+
+
+
+/* <================ Media ================> */
+@media (max-width: 1600px) {
+  :root {
+    --container-width: var(--container-width-md);
+    --form-width: var(--form-width-md);
+  }
+
+  .title__container {
+    flex-direction: column;
+  }
+
+  .title__container h1 {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .title__slider {
+    width: 100%;
+  }
+
+  .title__slider .btn-arrow {
+    width: 5rem;
+    height: 5rem;
+  }
+
+
+  .schedule__block {
+    width: 49%;
+  }
+}
+
+@media (max-width: 1280px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .news__blocks {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 4rem;
+  }
+
+  .news__block {
+    width: 45%;
+  }
+
+
+  .teachers__block {
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+  }
+
+  .teachers__inf {
+    height: 30rem;
+    order: 1;
+    width: 100%;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+  }
+
+  .teachers__img {
+    border-radius:var(--border-radius) var(--border-radius) 0 0;
+  }
+
+
+  .students__blocks {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+
+  .schedule__groups {
+    gap: 0.5rem;
+  }
+
+  .btn-schedule {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .header__container {
+    position: relative;
+  }
+
+  .header__menu {
+    display: block;
+    width: 3rem;
+  }
+
+  .header__nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__nav > ul {
+    display: none;
+    background-color: var(--color-1);
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    padding: 1rem;
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    bottom: -20rem;
+    gap: 1rem;
+  }
+
+
+  .teachers__block {
+    width: 45%;
+  }
+
+
+  .schedule {
+    gap: 2rem;
+  }
+
+  .schedule__block {
+    width: 100%;
+  }
+
+
+  .footer {
+    padding-top: 5rem;
+  }
+
+  .footer__nav {
+    margin-bottom: 4rem;
+
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container-width: var(--container-width-sm);
+    --form-width: var(--form-width-sm);
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  section {
+    padding: 5rem 0;
+  }
+
+  h2 {
+    margin-bottom: 4rem;
+  }
+
+  .news__title, .teachers__title {
+    margin-bottom: 4rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+
+  .title__section {
+    padding-top: 5rem;
+  }
+
+  .title__slider .btn-arrow {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .title__slider .btn-arrow svg {
+    width: 2.5rem;
+  }
+
+  .title__slider .btn-arrow.left {
+    left: 0;
+  }
+
+  .title__slider .btn-arrow.right {
+    right: 0;
+  }
+
+  .news__block {
+    width: 48%;
+  }  
+  
+  .footer__copyright {
+    gap: 0.5rem;
+  }
+  
+  .footer__social {
+    gap: 2rem;
+  }
+
+
+  .schedule {
+    padding: 2.5rem 0.5rem;
+  }
+
+  .schedule__block h6 {
+    margin-right: -1rem;
+  }
+
+
+  .login__section form {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --container-width: var(--container-width-phone);
+  }
+
+  .teachers__block {
+    width: 100%;
+  }
+
+  .news__block {
+    width: 100%;
+  }  
+}
+/* <================ End of Media ================> */

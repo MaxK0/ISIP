@@ -15,12 +15,14 @@
             <div class="container header__container">
                 <a class="header__logo" href="/"><img src="assets/img/logo.svg" alt="Лого"></a>
                 <nav class="header__nav">
+                    <button class="header__menu"><img src="assets/img/icons/burger-menu.svg" alt="Меню"></button>
                     <ul>
                         <li><a class="nav-link" href="/#news__section">Новости</a></li>
                         <li><a class="nav-link" href="/schedule.html">Расписание</a></li>
                         <li><a class="nav-link" href="/#students__section">Абитуриентам</a></li>
                         <li><a class="nav-link" href="/#teachers__section">Преподаватели</a></li>
-                        <li><a class="nav-link" href="/login.html">Вход</a> / <a class="nav-link" href="/registration.html">Регистрация</a></li>
+                        <li><a class="nav-link" href="/login.html">Вход</a> / <a class="nav-link"
+                                href="/registration.html">Регистрация</a></li>
                     </ul>
                 </nav>
             </div>
@@ -61,12 +63,26 @@
 
             <section id="news__section" class="news__section">
                 <div class="container news__container">
-                    <h2>Новости</h2>
+                    <div class="news__title">
+                        <h2>Новости</h2>
+                        <div class="news__all">
+                            <p>Все новости</p>
+                            <a href="/" class="btn-arrow right">
+                                <svg viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10.3452 18.6785C9.6943 19.3294 8.63903 19.3294 7.98816 18.6785L0.488155 11.1785C-0.162718 10.5276 -0.162718 9.47236 0.488155 8.82149L7.98816 1.32149C8.63903 0.670617 9.6943 0.670617 10.3452 1.32149C10.9961 1.97237 10.9961 3.02764 10.3452 3.67851L5.69036 8.33334L28.3333 8.33334C29.2538 8.33334 30 9.07953 30 10C30 10.9205 29.2538 11.6667 28.3333 11.6667L5.69036 11.6667L10.3452 16.3215C10.9961 16.9724 10.9961 18.0276 10.3452 18.6785Z"
+                                        fill="#F5F5F5" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                     <div class="news__blocks">
                         <div class="news__block">
                             <img src="assets/img/news-1.jpg" alt="Фото новости">
                             <div class="news__inf">
-                                <p>Студент 3 курса спецальности 09.02.07 “Инфомационные системы и программирование” Коряков Максим Александрович принял участие в Региональном этапе Всероссийского чемпионата “Профессионалы” в компетенции “Веб-технологии”.</p>
+                                <p>Студент 3 курса спецальности 09.02.07 “Инфомационные системы и программирование”
+                                    Коряков Максим Александрович принял участие в Региональном этапе Всероссийского
+                                    чемпионата “Профессионалы” в компетенции “Веб-технологии”.</p>
                                 <p class="news__date">29 марта 2024 г.</p>
                                 <button class="btn-main">Подробнее</button>
                             </div>
@@ -74,7 +90,8 @@
                         <div class="news__block">
                             <img src="assets/img/news-2.jpg" alt="Фото новости">
                             <div class="news__inf">
-                                <p>Состоялась защита портфолио студентов специальности 09.02.07 “Информационные системы и программирование”.</p>
+                                <p>Состоялась защита портфолио студентов специальности 09.02.07 “Информационные системы
+                                    и программирование”.</p>
                                 <p class="news__date">17 февраля 2024 г.</p>
                                 <button class="btn-main">Подробнее</button>
                             </div>
@@ -82,7 +99,8 @@
                         <div class="news__block">
                             <img src="assets/img/news-3.jpg" alt="Фото новости">
                             <div class="news__inf">
-                                <p>Завершился декадник специальности 09.02.07 “Информационные системы и программирование”.</p>
+                                <p>Завершился декадник специальности 09.02.07 “Информационные системы и
+                                    программирование”.</p>
                                 <p class="news__date">14 февраля 2024 г.</p>
                                 <button class="btn-main">Подробнее</button>
                             </div>
@@ -93,7 +111,19 @@
 
             <section id="teachers__section" class="teachers__section">
                 <div class="container teachers__container">
-                    <h2>Преподаватели</h2>
+                    <div class="teachers__title">
+                        <h2>Преподаватели</h2>
+                        <div class="teachers__all">
+                            <p>Все преподаватели</p>
+                            <a href="/" class="btn-arrow right">
+                                <svg viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10.3452 18.6785C9.6943 19.3294 8.63903 19.3294 7.98816 18.6785L0.488155 11.1785C-0.162718 10.5276 -0.162718 9.47236 0.488155 8.82149L7.98816 1.32149C8.63903 0.670617 9.6943 0.670617 10.3452 1.32149C10.9961 1.97237 10.9961 3.02764 10.3452 3.67851L5.69036 8.33334L28.3333 8.33334C29.2538 8.33334 30 9.07953 30 10C30 10.9205 29.2538 11.6667 28.3333 11.6667L5.69036 11.6667L10.3452 16.3215C10.9961 16.9724 10.9961 18.0276 10.3452 18.6785Z"
+                                        fill="#F5F5F5" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                     <div class="teachers__blocks">
                         <div class="teachers__block">
                             <div class="teachers__inf">
@@ -121,7 +151,8 @@
                                     <li>МДК.04.01.04 Разработка дополненной и виртуальной реальности</li>
                                     <li>МДК.04.01.02 Технология разработки программного обеспечения</li>
                                     <li>МДК.04.01.03 Инструментальные средства разработки программного обеспечения</li>
-                                    <li>МДК.04.06 Проектирование и использование электронных образовательных ресурсов</li>
+                                    <li>МДК.04.06 Проектирование и использование электронных образовательных ресурсов
+                                    </li>
                                     <li>МДК 01.09 Метод обучения первым ИКТ-навыкам</li>
                                     <li>Архитектура аппаратных средств</li>
                                     <li>МДК 01.01 Проектирование и дизайн информационных систем</li>
@@ -161,7 +192,8 @@
                                     <li>МДК.05.02 Технология разработки и защиты баз данных</li>
                                     <li>МДК.06.01 Системное программирование</li>
                                     <li>МДК.06.02 Прикладное программирование</li>
-                                    <li>МДК.04.01.01 Организация технологического процесса по программированию в компьютерных системах</li>
+                                    <li>МДК.04.01.01 Организация технологического процесса по программированию в
+                                        компьютерных системах</li>
                                     <li>МДК.04.01.02 Технология разработки программного обеспечения</li>
                                     <li>МДК.04.01.03 Инструментальные средства разработки программного обеспечения</li>
                                 </ul>
@@ -257,7 +289,8 @@
                         <li><a class="nav-link" href="/schedule.html">Расписание</a></li>
                         <li><a class="nav-link" href="/#students__section">Абитуриентам</a></li>
                         <li><a class="nav-link" href="/#teachers__section">Преподаватели</a></li>
-                        <li><a class="nav-link" href="/login.html">Вход</a> / <a class="nav-link" href="/registration.html">Регистрация</a></li>
+                        <li><a class="nav-link" href="/login.html">Вход</a> / <a class="nav-link"
+                                href="/registration.html">Регистрация</a></li>
                     </ul>
                 </nav>
                 <div class="footer__bottom">
@@ -277,4 +310,5 @@
     </div>
 </body>
 <script src="assets/scripts/index.js"></script>
+<script src="assets/scripts/header.js"></script>
 </html>
